@@ -41,3 +41,14 @@ app.listen(PORT, () => {
 	// R01, R02, R03, R04, R05
 	
 });
+const readline = require ('readline');
+const rl = readline.createInterface({
+	input: process.stdin,
+	output: process.stdout
+	});
+
+	rl.question('Who are you?\n',(name:any) => {
+		console.log('Hey there'+ name);
+		rl.close();
+	});
+
